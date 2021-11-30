@@ -1,0 +1,108 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: PlanetRing
+  m_Shader: {fileID: 4800000, guid: bed6ab2fd3c505e4aa12eff0d81da64f, type: 3}
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _NORMALMAP
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _BumpMap:
+        m_Texture: {fileID: 2800000, guid: b8e75c29a6fc39240bca015b789441d3, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailAlbedoMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailMask:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _DetailNormalMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _EmissionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: c65999d44e9e5be4eaec9b9738c2d361, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MetallicGlossMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _NoiseMap:
+        m_Texture: {fileID: 2800000, guid: e4e02ddf85c347d4d8206c809309655c, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _OcclusionMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _ParallaxMap:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - _BumpScale: 1
+    - _Cutoff: 0.651
+    - _DetailNormalMapScale: 1
+    - _DstBlend: 10
+    - _GlossMapScale: 1
+    - _Glossiness: 0.5
+    - _GlossyReflections: 1
+    - _Gradient: 5
+    - _Metallic: 0
+    - _Mode: 3
+    - _NoiseAmplitude: 4
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
+    - _Ring0Width: 0.05
+    - _Ring1Width: 0.1
+    - _Ring2Width: 0.2
+    - _Ring3Width: 0.2
+    - _Ring4Width: 0.1
+    - _Ring5Width: 0.05
+    - _Ring6Width: 0.1
+    - _Ring7Width: 0.05
+    - _Ring8Width: 0.02
+    - _Ring9Width: 0.03
+    - _SmoothnessTextureChannel: 0
+    - _SpecularHighlights: 1
+    - _SrcBlend: 1
+    - _Transparency: 1
+    - _UVSec: 0
+    - _ZWrite: 0
+    m_Colors:
+    - _BaseColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Color: {r: 1, g: 0.39316648, b: 0, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _Ring0Color: {r: 0.07450981, g: 0.1137255, b: 0.21960786, a: 1}
+    - _Ring1Color: {r: 0.10588236, g: 0.14509805, b: 0.35686275, a: 1}
+    - _Ring2Color: {r: 0.45098042, g: 0.70980394, b: 0.8117648, a: 1}
+    - _Ring3Color: {r: 0.14901961, g: 0.08235294, b: 0.43921572, a: 0}
+    - _Ring4Color: {r: 0.10196079, g: 0.15294118, b: 0.29411766, a: 1}
+    - _Ring5Color: {r: 0.12941177, g: 0.098039225, b: 0.5647059, a: 1}
+    - _Ring6Color: {r: 0.21960786, g: 0.21960786, b: 0.21960786, a: 0}
+    - _Ring7Color: {r: 0.31764707, g: 0.52156866, b: 0.90196085, a: 1}
+    - _Ring8Color: {r: 0.121568635, g: 0.04705883, b: 0.5686275, a: 1}
+    - _Ring9Color: {r: 0.54509807, g: 0.8470589, b: 0.90196085, a: 1}
+    - _RingColor: {r: 1, g: 1, b: 1, a: 1}
+    - _SpecularColour: {r: 1, g: 1, b: 1, a: 1}
+  m_BuildTextureStacks: []
