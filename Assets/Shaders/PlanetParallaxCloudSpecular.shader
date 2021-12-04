@@ -19,6 +19,8 @@ Shader "Shaders/Planet Parallax Cloud Specular"
 		_CloudMap				( "Cloud Map",				2D )					= "black" {}
 		_CloudNormalMap			( "Cloud Normal Map",		2D )					= "bump" {}
 		_CloudAlpha				( "Cloud Alpha",			Range( 0, 1.0 ) )		= 1
+
+		_FogColor ("Fog Color", Color) = (0, 0, 0, 0)
 	}
 	
 	SubShader
@@ -51,6 +53,8 @@ Shader "Shaders/Planet Parallax Cloud Specular"
 				sampler2D	_CloudMap;
 				sampler2D	_CloudNormalMap;
 				float		_CloudAlpha;
+
+				float4 _FogColor;
 				
 				struct vertOut
 				{
@@ -135,6 +139,7 @@ Shader "Shaders/Planet Parallax Cloud Specular"
 					//city lights
 					colour				+= saturate( 1 - 2 * diff ) * illum * _CityEmissionStrength * ( 1 - atmos.a );
 					
+                	colour.rgb = colour.rgb + _FogColor.a * (_FogColor.rgb - colour.rgb);
 					return half4( colour, 1 );
 				}
 			ENDCG

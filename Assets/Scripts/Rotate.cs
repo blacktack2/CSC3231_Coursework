@@ -6,6 +6,8 @@ public class Rotate : MonoBehaviour
 {
     [SerializeField]
     private float _RotatePeriod = 1.0f;
+    [SerializeField]
+    private Quaternion _Axis;
     
     void FixedUpdate()
     {

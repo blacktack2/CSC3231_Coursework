@@ -8,7 +8,7 @@ Shader "Unlit/Planet Ring"
         _Cutoff ("Cutoff", Range(0.0, 1.0)) = 0.5
         _Gradient ("Gradient", Float) = 1.0
         
-		_SpecularColour ("SpecularColour", Color) = (1, 1, 1, 1)
+        _FogColor ("Fog Color", Color) = (0, 0, 0, 0)
 
         _Ring0Width ("Ring 0 Width", Float) = 0.0
         _Ring0Color ("Ring 0 Color", Color) = (0, 0, 0, 1)
@@ -63,7 +63,7 @@ Shader "Unlit/Planet Ring"
             float _Cutoff;
             float _Gradient;
 
-            fixed4 _SpecularColour;
+            float4 _FogColor;
             
             float _Ring0Width;
             float4 _Ring0Color;
@@ -126,18 +126,7 @@ Shader "Unlit/Planet Ring"
                     col.a *= _Transparency;
                     col.a = clamp((col.a + (tex2D(_NoiseMap, i.uv) * _NoiseAmplitude - _NoiseAmplitude / 2)), 0, 1);
                 }
-                // float3 h = normalize(i.lightDir.xyz + i.eyeDir);
-
-                // float specularlight	= pow(max(h, 0 ), 10) * col.a;
-                // float3 spec = _SpecularColour.rgb * specularlight * _SpecularColour.a;
-
-                // col.rgb += spec;
-                // n = i.norm;
-                // l = i.lightDir.xyz;
-                // half diffAtmos		= max( dot( n, l ), 0.2 );
-
-                // colour = clamp( colour, 0, 1 );
-                // col.rgb *= _LightColor0.rgb;
+                col.rgb = lerp(col.rgb, _FogColor.rgb, _FogColor.a);
                 return col;
             }
             ENDCG
