@@ -144,8 +144,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _PerTexProps:
-        m_Texture: {fileID: 28459161185985568, guid: 33be7e4182d1f404fb55319a0218209f,
-          type: 2}
+        m_Texture: {fileID: 28459161185985568, guid: 33be7e4182d1f404fb55319a0218209f, type: 2}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ScatterControl:
@@ -288,3 +287,4 @@ Material:
     - _WindParticulateShadow: {r: 0.01, g: 1, b: 0, a: 0}
     - _WindParticulateShadowColor: {r: 0, g: 0, b: 0, a: 1}
     - _WorldHeightRange: {r: 0, g: 500, b: 0, a: 0}
+  m_BuildTextureStacks: []
